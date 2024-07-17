@@ -1,0 +1,1 @@
+print(my_dict.get('b'))  # Output: 4

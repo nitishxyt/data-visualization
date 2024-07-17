@@ -39,6 +39,11 @@ my_list2 = [22,14,16,47,78,16,98]
 del my_list2[1:3]
 print(my_list2)  # Output: [22,47,78,16,98]
 
+# Removing All list
+my_list2 = [22,14,16,47,78,16,98]
+del my_list2
+print(my_list2)  # Output: NameError: name 'my_list2' is not defined Becouse the list was delet
+
 # Removing All Elements
 my_list2 = [22,14,16,47,78,16,98]
 my_list2.clear()
