@@ -22,14 +22,17 @@ for i in range(len(stdid)):
 
 headers = ["stdid", "stdname", "standard", "Age", "Hindi", "English", "maths", "science", "computer", "Total"]
 
+
 # Print the table
 print(tabulate(combined_list, headers, tablefmt="grid"))
+
 
 # Students who scored greater than 50 in English
 english = [stdname[i] for i in range(len(stdid)) if English[i] > 50]
 print("\nStudents who scored greater than 50 in English:")
 for student in english:
     print(student)
+
 
 # Top 4 in Maths
 math_top_4 = sorted([(maths[i], stdname[i], Age[i]) for i in range(len(maths))], reverse=True)[:4]
